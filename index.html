@@ -12,5 +12,37 @@
     </style>
   </head>
   <body>
+    <script language="javascript">
+      function gallery(name, price, smallIMG, largeIMG){
+        this.ArtName = name;
+        this.ArtPrice = price;
+        this.SmallImage = smallIMG;
+        this.LargeImage = largeIMG;
+      }
+      let artContainer = [];
+      let art1 = new gallery();
+      art1.name = Starry Night;
+      art1.price = 500000;
+      artContainer.push(art1);
+      
+      let art2 = new gallery();
+      art2.name = Sunflowers;
+      art2.price = 1000000;
+      artContainer.push(art2);
+      
+      let art3 = new gallery();
+      art3.name = Self Portrait;
+      art3.price = 700000;
+      artContainer.push(art3);
+      
+      let art4 = new gallery();
+      art4.name = Irises;
+      art4.price = 800000;
+      artContainer.push(art4);
+      
+      let art5 = new gallery();
+      art5.name = Almond Blossoms;
+      art5.price = 900000;
+      artContainer.push(art5);
   </body>
 </html>
