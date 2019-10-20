@@ -10,10 +10,10 @@
         crossorigin="anonymous">
     </script>
       body {text-align: center; margin:auto};
-      .smallimg{
+      #smallimg{
          display:inline-block;
       }
-      .largeimg{
+      #largeimg{
         width: 300px;
         height: 300px;
         display: none;
@@ -46,7 +46,7 @@
       artContainer.push(art5);
     </script>
 
-       <div class="smallimg">
+       <div id="smallimg">
          <img src="starry_night_full.jpg"; style="width:40px;height:40px;">
          <img src="self-portrait.jpg"; style="width:40px;height:40px;">
          <img src="00094701.jpg"; style="width:40px;height:40px;">
@@ -58,7 +58,8 @@
       </div>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
-    $(function() {
+    $(document).ready(function()
+      {
     $('#smallimg').hover(function() { 
         $('#largeimg').fadeIn(); 
     }, function() { 
