@@ -19,7 +19,6 @@
         width: 300px;
         height: 300px;
         display: none;
-        background: red;
       }
     </style>
   </head>
@@ -49,25 +48,25 @@
     </script>
 
        <div id="smallimg">
-         <img src="starry_night_full.jpg"; style="width:40px;height:40px;">
-         <img src="self-portrait.jpg"; style="width:40px;height:40px;">
-         <img src="00094701.jpg"; style="width:40px;height:40px;">
-         <img src="van-gogh-blossoming-almond-tree-1.jpg"; style="width:40px;height:40px;">
-         <img src="van-gogh-sunflowers-12-in-a-vase-1-510x685.jpg"; style="width:40px;height:40px;">
+         <img src="starry_night_full.jpg"; class="starrynight"; style="width:40px;height:40px;">
+         <img src="self-portrait.jpg"; class="selfportrait"; style="width:40px;height:40px;">
+         <img src="00094701.jpg"; class="irises"; style="width:40px;height:40px;">
+         <img src="van-gogh-blossoming-almond-tree-1.jpg"; class="almond"; style="width:40px;height:40px;">
+         <img src="van-gogh-sunflowers-12-in-a-vase-1-510x685.jpg"; class="sunflowers"; style="width:40px;height:40px;">
         </div>
     
       <div id="largeimg">
       </div>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
-    $(document).ready(function()
-      {
-    $('#smallimg').hover(function() { 
-        $('#largeimg').fadeIn(); 
-    }, function() { 
-        $('#largeimg').fadeOut(); 
+    jQuery(document).ready(function($){
+
+    $('.starrynight').on({
+        'hover': function(){
+            $('#largeimg').attr('src','starry_night_full.jpg');
+        }
     });
-    });
+ 
     </script>
       
   </body>
