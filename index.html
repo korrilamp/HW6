@@ -54,10 +54,6 @@
          <img src="van-gogh-sunflowers-12-in-a-vase-1-510x685.jpg"; class="sunflowers"; style="width:40px;height:40px;">
         </div>
     
-      <div id="infoPane">
-    </div>
-    
-    <br>
     
     <img id="largeimg" />
     
@@ -91,6 +87,22 @@
         }
     });
    });
+      
+   $(document).ready(function(){
+     $('.starrynight').on({
+       'click':function(){
+         var img_clicked = $(this).val()
+         var name_clicked, price_clicked;
+         $.each(art_container, function(i,gallery){
+           if(gallery.smallIMG =="starry_night_full.jpg"){
+             name_clicked = art1.ArtName;
+             price_clicked = art1.ArtPrice;
+             break;
+           }
+         }
+       });
+             
+         
  
     </script>
       
