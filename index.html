@@ -96,7 +96,7 @@
     jQuery(document).ready(function($){
     $('.starrynight').on({
         'click': function(){
-            $('#infoPane').attr(art1.ArtName,art1.ArtPrice);
+            $('#infoPane').html("<h2>Piece title: "+ art1.ArtName + "<br> Piece Price: " + art1.artPrice + "</h2>");
         }
     });
   $('.selfportrait').on({
