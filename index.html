@@ -55,7 +55,15 @@
          <img src="van-gogh-sunflowers-12-in-a-vase-1-510x685.jpg"; class="sunflowers"; style="width:40px;height:40px;">
         </div>
     
-      <div id="infoPane">
+      <div id="infoPane1">
+    </div>
+      <div id="infoPane2">
+    </div>
+      <div id="infoPane3">
+    </div>
+      <div id="infoPane4">
+    </div>
+      <div id="infoPane5">
     </div>
     
     <br>
@@ -93,27 +101,27 @@
       
   $('.starrynight').on({
         'click': function(){
-            $('#infoPane').html("<h2>Piece title: "+ art1.ArtName + "<br> Piece Price: " + art1.ArtPrice + "</h2>");
+            $('#infoPane1').html("<h2>Piece title: "+ art1.ArtName + "<br> Piece Price: " + art1.ArtPrice + "</h2>");
         }
     });
   $('.selfportrait').on({
         'click': function(){
-            $('#infoPane').html("<h2>Piece title: "+ art3.ArtName + "<br> Piece Price: " + art3.ArtPrice + "</h2>");
+            $('#infoPane2').html("<h2>Piece title: "+ art3.ArtName + "<br> Piece Price: " + art3.ArtPrice + "</h2>");
         }
     });
   $('.irises').on({
         'click': function(){
-            $('#infoPane').html("<h2>Piece title: "+ art4.ArtName + "<br> Piece Price: " + art4.ArtPrice + "</h2>");
+            $('#infoPane3').html("<h2>Piece title: "+ art4.ArtName + "<br> Piece Price: " + art4.ArtPrice + "</h2>");
         }
     });
   $('.almond').on({
         'click': function(){
-            $('#infoPane').html("<h2>Piece title: "+ art5.ArtName + "<br> Piece Price: " + art5.ArtPrice + "</h2>");
+            $('#infoPane4').html("<h2>Piece title: "+ art5.ArtName + "<br> Piece Price: " + art5.ArtPrice + "</h2>");
         }
     });
   $('.sunflowers').on({
         'click': function(){
-            $('#infoPane').html("<h2>Piece title: "+ art2.ArtName + "<br> Piece Price: " + art2.ArtPrice + "</h2>");
+            $('#infoPane5').html("<h2>Piece title: "+ art2.ArtName + "<br> Piece Price: " + art2.ArtPrice + "</h2>");
         }
     });
    });
