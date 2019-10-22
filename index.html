@@ -22,6 +22,7 @@
     </style>
   </head>
   <body>
+    <h1>Van Gogh Art Gallery!</h1>
     <script language="javascript">
       function gallery(name, price, smallIMG, largeIMG){
         this.ArtName = name;
@@ -89,12 +90,7 @@
             $('#largeimg').attr('src','van-gogh-sunflowers-12-in-a-vase-1-510x685.jpg');
         }
     });
-   });
-
-    </script>
-    <script>
-    jQuery(document).ready(function($){
-    $('.starrynight').on({
+  $('.starrynight').on({
         'click': function(){
             $('#infoPane').html("<h2>Piece title: "+ art1.ArtName + "<br> Piece Price: " + art1.artPrice + "</h2>");
         }
