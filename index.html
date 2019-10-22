@@ -90,8 +90,36 @@
         }
     });
    });
- 
+
     </script>
+    <script>
+    jQuery(document).ready(function($){
+    $('.starrynight').on({
+        'click': function(){
+            $('#infoPane').attr(art1.ArtName,art1.ArtPrice);
+        }
+    });
+  $('.selfportrait').on({
+        'click': function(){
+            $('#infoPane').attr(art2.ArtName,art2.ArtPrice);
+        }
+    });
+  $('.irises').on({
+        'click': function(){
+            $('#infoPane').attr(art3.ArtName,art3.ArtPrice);
+        }
+    });
+  $('.almond').on({
+        'click': function(){
+            $('#infoPane').attr(art4.ArtName,art4.ArtPrice);
+        }
+    });
+  $('.sunflowers').on({
+        'click': function(){
+            $('#infoPane').attr(art5.ArtName,art5.ArtPrice);
+        }
+    });
+   });
       
   </body>
 </html>
