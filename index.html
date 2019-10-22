@@ -93,7 +93,8 @@
       
   $('.starrynight').on({
         'click': function(){
-            $("#infoPane").fadeIn('slow').delay(5000).fadeOut('slow');;
+            $('#infoPane').html("<h2>Piece title: "+ art1.ArtName + "<br> Piece Price: " + art1.ArtPrice + "</h2>");
+            $("#infoPane").fadeIn('fast').delay(500).fadeOut('fast');
         }
     });
   $('.selfportrait').on({
