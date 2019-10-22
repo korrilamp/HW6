@@ -67,8 +67,8 @@
     jQuery(document).ready(function($){
     $('.starrynight').on({
         'mouseover': function(){
-            $('#largeimg').fadeIn(500);
-            $('#largeimg').attr('src','starry_night_full.jpg');
+            $('#largeimg').hide();
+            $('#largeimg').attr('src','starry_night_full.jpg').fadeIn(400);
         }
     });
   $('.selfportrait').on({
@@ -95,31 +95,31 @@
   $('.starrynight').on({
         'click': function(){
             $('#infoPane').html("<h2>Piece title: "+ art1.ArtName + "<br> Piece Price: " + art1.ArtPrice + "</h2>");
-            $("#infoPane").fadeIn('fast').delay(3000).fadeOut('fast');
+            $("#infoPane").fadeIn('fast').delay(5000).fadeOut('fast');
         }
     });
   $('.selfportrait').on({
         'click': function(){
             $('#infoPane').html("<h2>Piece title: "+ art3.ArtName + "<br> Piece Price: " + art3.ArtPrice + "</h2>");
-            $("#infoPane").fadeIn('fast').delay(3000).fadeOut('fast');
+            $("#infoPane").fadeIn('fast').delay(5000).fadeOut('fast');
         }
     });
   $('.irises').on({
         'click': function(){
             $('#infoPane').html("<h2>Piece title: "+ art4.ArtName + "<br> Piece Price: " + art4.ArtPrice + "</h2>");
-           $("#infoPane").fadeIn('fast').delay(3000).fadeOut('fast');
+           $("#infoPane").fadeIn('fast').delay(5000).fadeOut('fast');
         }
     });
   $('.almond').on({
         'click': function(){
             $('#infoPane').html("<h2>Piece title: "+ art5.ArtName + "<br> Piece Price: " + art5.ArtPrice + "</h2>");
-            $("#infoPane").fadeIn('fast').delay(3000).fadeOut('fast');
+            $("#infoPane").fadeIn('fast').delay(5000).fadeOut('fast');
         }
     });
   $('.sunflowers').on({
         'click': function(){
             $('#infoPane').html("<h2>Piece title: "+ art2.ArtName + "<br> Piece Price: " + art2.ArtPrice + "</h2>");
-            $("#infoPane").fadeIn('fast').delay(3000).fadeOut('fast');
+            $("#infoPane").fadeIn('fast').delay(5000).fadeOut('fast');
         }
     });
       
